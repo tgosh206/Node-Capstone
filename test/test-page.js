@@ -1,6 +1,6 @@
 const chai = require('chai');
-const chaiHttp = require('chai-http');
-const mongoose = require('mongoose');
+// const chaiHttp = require('chai-http');
+// const mongoose = require('mongoose');
 
 var expect  = require('chai').expect;
 var request = require('request');
