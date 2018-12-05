@@ -1,14 +1,20 @@
-const chai = require('chai');
-// const chaiHttp = require('chai-http');
-// const mongoose = require('mongoose');
+"use strict";
 
-var expect  = require('chai').expect;
-var request = require('request');
+const chai = require("chai");
+const chaiHttp = require("chai-http");
+const app = require("../server.js");
 
-it('Initial test', function(done) {
-    request('http://localhost:3000' , function(error, response, body) {
-        expect(body).to.equal('Hello World');
-        done();
-    });
+const expect = chai.expect;
+
+chai.use(chaiHttp);
+
+describe("initial page", function() {
+  it("should be here", function() {
+    return chai
+      .request(app)
+      .get("/")
+      .then(function(res) {
+        expect(res).to.have.status(200);
+      });
+  });
 });
-
