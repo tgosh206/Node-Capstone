@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: b5AviFuWqYaUoRvGMFLKx0Ig+iY7xySGAa0oYYGfQbxQMaHBE7JBK0YaINPvfTdEjC2seYmVV4spfq1DXdJoLfqItnip49YuVHf7ol1dSZzG3CoGVYXkd0jEXaS5NKLjJBB58oiJAognygr5Knm3FMKim7MrTK+L0XCi3PBaDmnHUvmu3w2zxChmGbHeLpfkqVaX0UCq8xZf8tPQyOJXzSOXBddUyNcTNNk+w5ihggUcQLLzlbWHbbRS8csX024eLntmdO1mQ/GP0ZDB+SqQBEVij80zF6kC/8FKzz/H+3+RF/WDiAUirA7pbgArg1Q2/V4ESJdpzR897UdCWIg/w5LJLOI1k6swynUbOwg4sOHd/d5DVUvdvSma4E0S/QFxeJ1la/+mwFoy45UH9m93gKFpv1zf+JqKxJnF/mbKnuQV9ay4upjoGxevRvQAeehA2zVqza3Z7R0TayvPWeeh+oxFtrcW7EwwI3zo0pJBAf+MZcrUpEXCaDFIPz2MDAJS0A9TIkjtG2ovWFTHxSp5ZPlVhD6TyrkbToBmmpb/54fzCYzNfbUpAnubQlbHRL0k26yAsTaNnGajSc/O3VO/0Witk8On24DcLY96tJSGZJYqLpCgXJ5x5WJQCbm5KGm498OsPwxC01ymJCwtVS68YG3Su9XpCpkRBOkQffhcNaA=
+  app: gentle-lowlands-47951
+  on:
+    repo: tgosh206/Node-Capstone
