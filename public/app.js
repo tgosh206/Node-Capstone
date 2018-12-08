@@ -66,9 +66,9 @@ function displayGifInfo() {
 // }
 
 //  on page load do this
-function() {
-	DisplayGifInfo();
-}
+// function() {
+// 	DisplayGifInfo();
+// }
 
 if (require.main === module) {
   app2.listen(process.env.PORT || 3000, function() {
