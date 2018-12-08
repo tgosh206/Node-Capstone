@@ -158,9 +158,7 @@ describe('Auth endpoints', function () {
       const token = jwt.sign(
         {
           user: {
-            username,
-            firstName,
-            lastName
+            username
           },
           exp: Math.floor(Date.now() / 1000) - 10 // Expired ten seconds ago
         },
