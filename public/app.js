@@ -1,3 +1,12 @@
+
+"use strict";
+
+const express = require("express");
+// const mongoose = require('mongoose');
+const app2 = express();
+
+app2.use(express.static("public"));
+
 // this is mock data, but when we create our API
 // we'll have it return data that looks like this
 var MOCK_GIF_INFO = {
@@ -60,3 +69,11 @@ function getAndDisplayGifInfo() {
 $(function() {
 	getAndDisplayGifInfo();
 })
+
+if (require.main === module) {
+  app2.listen(process.env.PORT || 3000, function() {
+    console.info(`App listening on ${this.address().port}`);
+  });
+}
+
+module.exports = app2;
