@@ -44,11 +44,11 @@ var MOCK_GIF_INFO = {
 // timeout function that returns mock data, it will
 // use jQuery's AJAX functionality to make a call
 // to the server and then run the callbackFn
-function getRecentGifInfo(callbackFn) {
+// function getRecentGifInfo(callbackFn) {
     // we use a `setTimeout` to make this asynchronous
     // as it would be with a real AJAX call.
-	setTimeout(function(){ callbackFn(MOCK_GIF_INFO)}, 1);
-}
+// 	setTimeout(function(){ callbackFn(MOCK_GIF_INFO)}, 1);
+// }
 
 // this function stays the same when we connect
 // to real API later
@@ -61,14 +61,14 @@ function displayGifInfo(data) {
 
 // this function can stay the same even when we
 // are connecting to real API
-function getAndDisplayGifInfo() {
-	getRecentGifInfo(displayGifInfo);
-}
+// function getAndDisplayGifInfo() {
+// 	getRecentGifInfo(displayGifInfo);
+// }
 
 //  on page load do this
-$(function() {
-	getAndDisplayGifInfo();
-})
+function() {
+	DisplayGifInfo();
+}
 
 if (require.main === module) {
   app2.listen(process.env.PORT || 3000, function() {
