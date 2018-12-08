@@ -52,10 +52,10 @@ var MOCK_GIF_INFO = {
 
 // this function stays the same when we connect
 // to real API later
-function displayGifInfo(data) {
-    for (index in data.gifInfo) {
+function displayGifInfo() {
+    for (index in gifInfo) {
 	   $('body').append(
-        '<p>' + data.gifInfo[index].text + '</p>');
+        '<p>' + gifInfo[index].text + '</p>');
     }
 }
 
