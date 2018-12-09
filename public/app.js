@@ -2,10 +2,11 @@
 "use strict";
 
 const express = require("express");
-// const mongoose = require('mongoose');
-const app2 = express();
+const mongoose = require('mongoose');
 
-app2.use(express.static("public"));
+const app = express();
+
+app.use(express.static("public"));
 
 // this is mock data, but when we create our API
 // we'll have it return data that looks like this
