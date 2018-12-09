@@ -2,7 +2,7 @@
   "name": "node-capstone",
   "version": "1.0.0",
   "description": "",
-  "main": "/public/app.js",
+  "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^6.2.0",
