@@ -378,4 +378,4 @@ describe('/api/user', function() {
       });
     });
   });
-});
+})
