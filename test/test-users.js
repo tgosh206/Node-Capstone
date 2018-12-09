@@ -375,7 +375,5 @@ describe('/api/user', function() {
               username: usernameB,
             });
           });
-      })
-    })
-  })
-})
+      });
+    });
